@@ -9,3 +9,7 @@ describe('Return value check:', () => {
     expect(tester.alwaysThrows).toThrow('OH NOES');
   });
 });
+
+describe('Check if promise resolves only once:', () => {
+  it('Check for resolve:', () => expect(tester.prom).resolves.toBe('OH NOES'));
+});
