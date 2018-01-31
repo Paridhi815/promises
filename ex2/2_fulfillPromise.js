@@ -1,6 +1,6 @@
 
-let promise = new Promise(function (fulfill) {
-  setTimeout(function () {
+let promise = new Promise((fulfill) => {
+  setTimeout(() => {
     fulfill('FULFILLED!');
   }, 300);
 });
