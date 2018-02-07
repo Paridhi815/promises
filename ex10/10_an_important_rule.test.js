@@ -11,5 +11,5 @@ describe('Return value check:', () => {
 });
 
 describe('Check if promise resolves only once:', () => {
-  it('Check for resolve:', () => expect(tester.prom).resolves.toBe('OH NOES'));
+  it('Check for resolve:', () => expect(tester.prom).rejects.toThrow('OH NOES'));
 });
